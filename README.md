@@ -7,7 +7,7 @@
 #### 개발환경 및 플러그인 설치
 
 Sublime Text 3 <http://www.sublimetext.com/3>  
-Package Control <https://packagecontrol.io/>
+Package Control <https://packagecontrol.io/>  
 Emmet <http://www.emmet.io/download/>  
 Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
 
