@@ -1,5 +1,5 @@
 # Frontend Shool 2기
-웹의기초 및 HTML5&amp;CSS3 (Fast Campus)
+웹의 기초 및 HTML5&amp;CSS3 (Fast Campus)
 <hr />
 
 ## 1일차 (9월 19일)
