@@ -1,4 +1,4 @@
-# Frontend Shool 2기
+# Front-end Shool 2기
 웹의 기초 및 HTML5&amp;CSS3 (Fast Campus)
 <hr />
 
