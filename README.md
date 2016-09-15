@@ -6,12 +6,10 @@
 
 #### 개발환경 및 플러그인 설치
 
-Sublime Text 3 <http://www.sublimetext.com/3>
+Sublime Text 3 <http://www.sublimetext.com/3>  
 Package Control <https://packagecontrol.io/>
-Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
-Firefox <https://www.mozilla.org/ko/firefox/new/>  
 Emmet <http://www.emmet.io/download/>  
-
+Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
 
 수업자료: [Download][downloadlink]
 [downloadlink]: http://www.webcafe2010.com
