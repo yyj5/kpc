@@ -4,7 +4,7 @@
 
 ## 1일차 (9월 19일)
 
-#### 개발환경 플러그인 설치
+#### 개발환경 및 플러그인 설치
 
 Sublime Text 3 <http://www.sublimetext.com/3>  
 Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
