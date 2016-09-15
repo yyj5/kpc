@@ -6,10 +6,10 @@
 
 #### 개발환경 플러그인 설치
 
-Sublime Text 3 <http://www.sublimetext.com/3>
-Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>
-Firefox <https://www.mozilla.org/ko/firefox/new/>
-Emmet <http://www.emmet.io/download/>
+Sublime Text 3 <http://www.sublimetext.com/3>  
+Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
+Firefox <https://www.mozilla.org/ko/firefox/new/>  
+Emmet <http://www.emmet.io/download/>  
 
 
 수업자료: [Download][downloadlink]
