@@ -43,7 +43,7 @@ Theme Soda
 }  
 
 Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>   
-확장 프로그램  <https://chrome.google.com/webstore/category/apps?hl=ko>  
+Chrome Web Store  <https://chrome.google.com/webstore/category/apps?hl=ko>  
 * Web Developer Tool
 * Open WAX
 * headingsmap
