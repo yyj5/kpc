@@ -42,7 +42,7 @@ Theme Soda
 	"word_wrap": true  
 }  
 
-Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  확장 
+Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>   
 확장 프로그램  <https://chrome.google.com/webstore/category/apps?hl=ko>  
 * Web Developer Tool
 * Open WAX
