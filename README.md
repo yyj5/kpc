@@ -42,7 +42,9 @@ Theme Soda
 	"word_wrap": true  
 }  
 
-Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
+Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  확장 
+확장 프로그램  <https://chrome.google.com/webstore/category/apps?hl=ko>  
+* Web Developer Tool
+* Open WAX
+* headingsmap
 
-수업자료: [Download][downloadlink]
-[downloadlink]: http://www.webcafe2010.com
