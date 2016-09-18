@@ -6,9 +6,13 @@
 
 #### 개발환경 및 플러그인 설치
 
-Sublime Text 3 <http://www.sublimetext.com/3>  
-Package Control <https://packagecontrol.io/installation#st3>    
-Emmet <http://www.emmet.io/download/>  
+* Sublime Text 3 다운로드 후 설치 <http://www.sublimetext.com/3>  
+* Package Control 설치 <https://packagecontrol.io/installation#st3>    
+(단축키: Ctrl+`, 메뉴: View > Show Console menu)  
+* Install Package (단축키: Ctrl-Shift-P, 메뉴: Tools > Command Pallet)  
+**Emmet
+**SideBarEnhancements
+
 Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
 
 수업자료: [Download][downloadlink]
