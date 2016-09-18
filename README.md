@@ -10,8 +10,12 @@
 * Package Control 설치 <https://packagecontrol.io/installation#st3>    
 (단축키: Ctrl+`, 메뉴: View > Show Console menu)  
 * Install Package (단축키: Ctrl-Shift-P, 메뉴: Tools > Command Pallet)  
-** Emmet  
-** SideBarEnhancements  
+Emmet  
+SideBarEnhancements  
+ConvertToUTF8  
+IMESupport(Windows Only)  
+Theme Soda  
+
 
 Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
 
