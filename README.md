@@ -20,7 +20,6 @@ Theme Soda
 * 기본환경 설정 변경 (Preferences -> Settings-User)  
 {  
 	"always_show_minimap_viewport": false,  
-	"color_scheme": "Packages/User/Espresso Soda.tmTheme",  
 	"draw_minimap_border": true,  
 	"font_face": "Consolas",  
 	"font_options":  
