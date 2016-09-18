@@ -15,7 +15,9 @@ SideBarEnhancements
 ConvertToUTF8  
 IMESupport(Windows Only)  
 Theme Soda  
-
+* Sidebar 단축키 변경 (Preferences -> Key Bindings-User)
+{ "keys": ["ctrl+shift+s"], "command": "toggle_side_bar" }
+* 기본환경 설정 변경 (Preferences -> Settings-User)
 
 Google Chrome <https://www.google.co.kr/chrome/browser/desktop/>  
 
