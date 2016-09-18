@@ -1,0 +1,808 @@
+@charset "utf-8";
+@import url(normalize.css);
+@import url(fonts.css);
+/* 초기화 */
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+fieldset, a img{
+	border: 0;
+}
+/* 기본 스타일 */
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 14px;
+	color: #181818;
+	background: linear-gradient(to bottom, #ccc 0%, #eee 70%, #fff 100%);	
+	font: 1.4rem /1.2 'Noto Sans Regular'; 
+}
+p {
+	line-height: 1.5;
+}
+/* 링크스타일 */
+a:link{
+	color: inherit;
+}
+a:visited{
+	color: #333;
+}
+a:hover, a:focus{
+	color: #f00;	
+}
+a:link, a:visited, a:hover, a:focus{
+	text-decoration: none;
+}
+/* 숨김 콘텐츠 */
+.hidden, legend{
+	position: absolute;
+	left: -9999em;
+}
+/* 플로트 이슈를 해결하기 위한 clearfix 선언 */
+.clearfix:after, .member:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 웹카페 아이콘 */
+.main-menu ul a{
+	outline: 0;
+}
+.main-menu ul a:before, 
+.member a:before, 
+.search label:before,
+.notice-more:before, 
+.pds-more:before,
+.board li:before,
+.news-more:before,
+.news-title:before,
+.hot-more:before{
+	 font-family: 'webcafeIcon';
+	 content: "r";
+	 position: relative;
+	 top: 2px;
+}
+.main-menu ul a:hover:before, .main-menu ul a:focus:before{
+	 content: "c";
+}
+/* 컨테이너 */
+.wrapper{
+	background: url(images/bg_flower.png) no-repeat center top;
+}
+.header, .visual, .main-contents, .slogan, .footer{
+	box-sizing: border-box;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* 헤더 */
+.header{
+	background: #fff;
+	padding: 10px 30px 35px;
+	border-radius: 0 0 15px 15px;
+	position: relative;
+}
+/* 로고 */
+.logo{
+	position: absolute;
+	left: 60px;
+	top: 48px;
+}
+/* 안내링크 */
+.info-link{
+	text-align: right;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	position: relative;
+	right: -3px;
+}
+.info-link li{
+	display: inline;
+	padding-left: 10px;
+}
+.info-link a:before{
+	content: ":";
+	padding-right: 13px;
+}
+li.first-item a:before{
+	content: "";
+}
+.info-link a{
+	padding: 8px 3px 8px 0;
+	display: inline;
+}
+/* 메인메뉴 */
+.main-menu{	
+	background: linear-gradient(to bottom, #f4c030 0%,#db8829 50%,#f4c030 100%);
+	background-color: #db8829;
+	border-top: 2px solid #000;
+	height: 45px;
+	padding-left: 225px;
+	border-radius: 0 0 5px 5px;
+}
+.main-menu > li{
+	float: left;
+	position: relative;
+}
+.main-menu > li > a{
+	 display: block;
+	 font-family: 'Noto Sans Bold';
+	 color: #fff;
+	 font-size: 1.8rem;
+	 line-height: 45px;
+	 padding: 0 15px; 
+	 border-left: 1px solid #fff;
+	 text-shadow: 1px 0 0 rgba(0,0,0,.5), 
+	 			  0 1px 0 rgba(0,0,0,.5),
+	 			  -1px 0 0 rgba(0,0,0,.5),
+	 			  0 -1px 0 rgba(0,0,0,.5);
+}
+.main-menu > li > a:hover, .main-menu > li > a:focus{
+	color: #ff0;
+}
+.main-menu > li > a:hover:after, .main-menu > li > a:focus:after{
+	content: "";
+	display: block;
+	border-top: 2px solid #000;
+}
+.main-menu ul{
+	position: absolute;
+	top: 47px;
+	white-space: nowrap;
+}
+.main-menu ul li, .main-menu ul a{
+	display: inline-block;
+}
+.main-menu ul a{
+	padding: 8px 8px 8px 0;
+}
+.about-html{
+	display: none;
+	left: 0;
+}
+.about-css{
+	display: none;
+	left: 0;
+}
+.web-standard{
+	display: none;
+	left: 0;
+}
+.web-accessibility{
+	display: none;
+	left: -113px;
+}
+.qna{
+	display: none;
+	left: -140px;
+}
+.archive{
+	display: none;
+	right: -25px;
+}
+/* 비주얼 */
+@keyframes flower-ani{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes text-ani{
+	0%{
+		font-size: 12px;
+		transform: translate(0, 0);
+		opacity: .2;
+	}
+	100%{
+		font-size: 24px;
+		transform: translate(400px, 75px);
+		opacity: 1;
+	}
+}
+.visual{
+	height: 120px;
+	position: relative;
+}
+.visual:before, .visual:after{
+	animation: flower-ani 2s infinite alternate;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 120px;
+}
+.visual:before{
+	background: url(images/ani_flower_01.png) no-repeat 0 -15px,
+	url(images/ani_flower_02.png) no-repeat 670px 0;
+}
+.visual:after{
+	background: url(images/ani_flower_03.png) no-repeat 300px 0,
+	url(images/ani_flower_04.png) no-repeat 800px 15px;
+	animation-delay: 1s;
+}
+
+
+
+.visual-text{
+	animation: text-ani 1s forwards ease-in-out;
+	opacity: 0;
+	width: 500px;
+	font-size: 24px;
+	font-family: Georgia, serif;
+}
+/* 메인 콘텐츠 */
+.main-contents{
+	/*display: flex;
+	flex-direction: row;	
+	justify-content: space-between; 
+	CSS3에 추가된 flex box 관련 속성을 사용한 경우 */
+	padding: 30px 15px;
+	min-height: 400px;
+	background: #fff;
+	border-radius: 15px 15px 0 0;
+}
+.column{
+	float: left;
+	margin: 0 15px;
+}
+/* 컬럼영역 공통 디자인 */
+.term, .event-related-wrap, .hot{
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+}
+.term-subject, .event-subject, .related-subject, .hot-subject{
+	font-size: 1.6rem;
+	font-family: 'Noto Sans Bold';
+}
+.usefull-area{
+	width: 250px;
+}
+.info-area{
+	width: 380px;
+}
+.link-area{
+	width: 190px;
+}
+/* transition 속성 활용 예시
+.box{
+	background: yellow;
+	height: 100px;
+	width: 100px;
+	border-radius: 0;
+	transition: all 3s 1s ease-in-out;
+}
+.box:hover{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;	
+}
+*/
+/* 로그인, 배너링크 , 웹관련 용어 */
+/* 로그인 */
+.login{
+	background: radial-gradient(circle at top right, #ffc848, #ff8208);
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,.5);
+}
+.login-subject{
+	color: #ff0;
+	font-size: 1.6rem;
+	padding: 0 0 10px 10px;
+}
+.login form{
+	background: #fff;
+	padding: 10px 10px 0 10px;
+	border-radius: 3px 3px 0 0;
+}
+.login fieldset{
+	position: relative;
+	border-bottom: 1px solid #aaa;
+}
+.user-email, .user-pw{
+	margin-bottom: 7px;
+}
+.login label{
+	width: 55px;
+	display: inline-block;
+}
+.login input{
+	box-sizing: border-box;
+	width: 95px;
+	height: 22px;
+	border: 1px solid #ccc;
+	padding: 2px 2px 2px 5px;
+}
+.btn-login{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 2px;
+	font-weight: bold;
+	border:1px solid #ff4e00;	
+	border-radius: 3px;
+	background-color: #fb5d1f;
+	background-image: linear-gradient(to bottom, #fe5f18 0%,#fa4306 100%);
+}
+.member{
+	background: #fff;
+	border-radius: 0 0 3px 3px;
+	padding: 0 10px 0 10px;	
+}
+.member a{
+	padding: 8px 0;
+}
+.member a:before{
+	content: "g";
+	color: #f00;
+}
+.signup{
+	float: left;
+}
+.find{
+	float: right;
+}
+/* 유효성 검사 배너 */
+.validation{
+	margin-top: 20px;
+}
+.validation a{
+	display: block;
+	border: 1px solid #aaa;
+	margin: 10px 0;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 15px;
+	text-indent: 50px;
+	background: url(images/validation_icon.png) no-repeat 20px 5px,
+				linear-gradient(to bottom, #eee 0%, #ccc 100%);
+	background-size: 20px 20px, cover;
+}
+/* 웹 관련 용어 */
+.term{
+	padding: 15px;
+	margin-top: 20px;
+}
+.term a{
+	display: block;
+	margin-top: 15px;
+}
+.term dl{
+	overflow: hidden
+}
+.term-title{
+	margin-bottom: 6px;
+	color: #296897;
+}
+.term-brief{
+	font-size: 1.3rem;
+}
+.term-title, .term-brief{
+	width: 140px;
+	float: right;
+}
+.term-thumbnail{
+	float: left
+}
+/* CSS3의 구조 선택자 사용 예시
+.term a:nth-of-type(even) .term-title, .term a:nth-of-type(even) .term-brief{
+	float: left;
+}
+.term a:nth-of-type(even) .term-thumbnail{
+	float: right;
+}*/
+/* 검색, 공지사항 및 자료실, 새소식 */
+/* 검색 */
+.search{
+	background: linear-gradient(to bottom, #ccc 0%, #fff 100%);
+	padding: 15px 25px 0;
+	border-radius: 25px 25px 0 0;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+.search label:before{
+	content: "z";
+}
+.search input{
+	box-sizing: border-box;
+	width: 200px;
+	height: 22px;
+	border: 1px solid #aaa;
+	padding: 1px 1px 1px 5px;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+.btn-search{
+	width: 45px;
+	height: 22px;
+	border: 1px solid #aaa;
+	padding: 2px 5px;
+	border-radius: 2px;
+	color: #fff;
+	background: linear-gradient(to bottom, #9c9da1 0%,#666666 30%,#4e4f56 100%);
+	background-color: #666;
+}
+/* 공지사항 및 자료실 */
+.board{
+	margin-top: 20px;
+	position: relative;
+	height: 185px;
+}
+.off ul, .off .notice-more, .off .pds-more{
+	display: none;
+}
+.notice-subject, .pds-subject{
+	float: left;
+}
+.notice-subject a, .pds-subject a{
+	background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+	font-size: 1.4rem;
+	display: block;
+	border: 1px solid #aaa;
+	padding: 7px 15px;
+	border-radius: 10px 10px 0 0;
+	color: #666;
+}
+.on .notice-subject a, .on .pds-subject a{
+	background: #fff;
+	color: #ff4911;
+	border-color: #ff6738;
+	border-bottom-color: #fff;
+}
+.board ul{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+}
+.board li{
+	margin: 8px 0;
+}
+.board-date{
+	float: right;
+}
+.board-title{
+	width: 285px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.notice-more, .pds-more, .news-more, .hot-more{
+	position: absolute;	
+	top: 0;
+	right: -8px;
+	padding: 8px;
+}
+.notice-more:before, .pds-more:before, .news-more:before, .hot-more:before{
+	content: "p";
+	color: #00B745;
+}
+/* :target 선택자 활용 예시 - 반드시 로딩 시 활성화 필요
+.board{
+	margin-top: 20px;
+	position: relative;
+	height: 185px;
+}
+.notice-subject, .pds-subject{
+	float: left;
+}
+.notice-subject a, .pds-subject a{
+	background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+	font-size: 1.4rem;
+	display: block;
+	border: 1px solid #aaa;
+	padding: 7px 15px;
+	border-radius: 10px 10px 0 0;
+	color: #666;
+}
+.board section:target .notice-subject a, .board section:target .pds-subject a{
+	background: #fff;
+	color: #ff4911;
+	border-color: #ff6738;
+	border-bottom-color: #fff;
+}
+
+.board section:target .notice-more, .board section:target .pds-more{
+	z-index: 10;
+}
+.board section:target ul{
+	display: block;
+}
+.board ul{
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+}
+.board li{
+	margin: 8px 0;
+}
+.board-date{
+	float: right;
+}
+.board-title{
+	width: 285px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.notice-more, .pds-more, .news-more{
+	position: absolute;	
+	top: 0;
+	right: -8px;
+	padding: 8px;
+}
+.notice-more:before, .pds-more:before, .news-more:before{
+	content: "p";
+	color: #00B745;
+}*/
+/* 새소식 */
+.news{
+	margin-top: 20px;
+	position: relative;
+}
+.news:before{
+	content: "";
+	background: linear-gradient(to right, #aaa 0%, #fff 100%);
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+
+
+.news-more{
+	top: -6px;
+}
+.news-subject{
+	font-size: 1.6rem;
+	color: #FA4306;
+	font-family: 'Noto Sans Bold';
+}
+.news-item{
+	margin-top: 30px;
+	padding-left: 130px;
+	position: relative;
+}
+.news-title{
+	font-size: 1.5rem;
+}
+.news-date, .news-brief{
+	display: block;
+	margin-left: 1em;
+	margin-top: 8px;
+}
+.news-thumbnail{
+	position: absolute;
+	top: 0;
+	left: 0;	
+	text-align: center;
+}
+.news-thumbnail img{
+	display: block;
+	box-shadow: 0 10px 10px 0 #ccc;
+	margin-bottom: 20px;
+}
+/* 신규이벤트와 관련사이트, 인기사이트 */
+/* 신규이벤트와 관련사이트 */
+.event-related-wrap{
+	padding: 10px;
+}
+.event{
+	border-bottom: 1px solid #666;
+	position: relative;
+}
+.event-subject span, .related-subject span, .hot-subject span{
+	color: #FA3D00
+}
+#event-detail{
+	margin-top: 10px;
+}
+.event-thumbnail img{
+	box-shadow: 5px 5px 5px 0 #ccc;
+}
+.event-brief{
+	margin: 10px 0;
+}
+.event-brief em{
+	display: block;
+	font-style: normal;
+}
+.btn-event-wrap{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.btn-event-prev, .btn-event-next{
+	background: url(images/back_forward.png) no-repeat;
+	width: 19px;
+	height: 0;
+	padding-top: 18px;
+	display: inline-block;
+	overflow: hidden;	
+}
+.btn-event-next{
+	background-position: 100% 0;
+}
+.related-subject{
+	margin: 10px 0;
+}
+.related-list{
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background: #fff;
+	height: 25px;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.related-list:hover{
+	height: 125px;
+	padding: 10px 0;
+}
+.related-list a{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 20px;
+}
+/* 인기 사이트 */
+.hot{
+	padding: 10px;
+	margin-top: 20px;
+	position: relative;
+}
+.hot-list{
+	margin-top: 5px;
+	overflow: hidden;
+}
+.hot-list li{
+	counter-increment: number;
+	margin: 5px 0;
+}
+.hot-list li:before{
+	content: counter(number, decimal);
+	background: #a1a1a1;
+	border-radius: 3px;
+	padding: 1px 5px;
+	margin-right:5 px;
+	color: #fff;
+	font-size: 1.1rem;
+}
+
+
+.hot-more{
+	top: 2px;
+	right: 2px;
+}
+.hot-list em{
+	font-style: normal;
+	background: url(images/rank.png) no-repeat;
+	float: right;
+	width: 9px;
+	height: 0;
+	padding-top: 9px;
+	overflow: hidden;
+	position: relative;
+	top: 6px;	
+}
+em.stop{
+	background-position: 0 50%;
+}
+em.down{
+	background-position: 0 100%;
+}
+/* 슬로건 */
+.slogan{
+	padding: 15px 100px 15px 200px;
+	position: relative;
+}
+.slogan-subject{
+	width: 110px;
+	height: 0;
+	padding-top: 83px;
+	overflow: hidden;
+	position: absolute;
+	bottom: -25px;
+	left: 45px;
+	background: url(images/coffee.png) no-repeat;
+}
+.slogan-contents{
+	color: #a09784;
+}
+.slogan-contents q{
+	font-weight: bold;
+}
+.slogan-contents q:before{
+	font-size: 3rem;
+	position: relative;
+	top: 10px;
+}
+.slogan-contents q:after{
+	content: "";
+}
+/* 푸터 */
+.footer-wrap{
+	background: linear-gradient(to bottom, #ccc 0%, #eee 70%, #fff 100%);	
+}
+.footer{
+	position: relative;
+	padding: 15px 100px 15px 200px;
+}
+/* 푸터 로고 */
+.footer-logo{
+	position: absolute;
+	top: 60px;
+	left: 45px;
+}
+/* HTML5&CSS3 로고 */
+.tech-logo{
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+/* 사이트 이용안내 */
+.guide-list{
+	background: #7b8385;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-left: 8px;
+}
+.guide-list li{
+	float: left;
+}
+.guide-list a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	padding-right: 15px;
+}
+.guide-list a:before{
+	content: "|";
+	padding-right: 15px;
+}
+.guide-list li:first-child a:before{
+	content: "";
+}
+/* 주소 및 저작권정보 */
+address{
+	font-style: normal;
+	margin-bottom: 5px;	
+}
+address span{
+	margin-right: 15px;
+}
+address, .copyright{
+	font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
