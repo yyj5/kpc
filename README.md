@@ -8,8 +8,8 @@
 
 * Sublime Text 3 다운로드 후 설치 <http://www.sublimetext.com/3>  
 * Package Control 설치 <https://packagecontrol.io/installation#st3>    
-(단축키: Ctrl+`, 메뉴: View > Show Console menu)  
-* Install Package (단축키: Ctrl-Shift-P, 메뉴: Tools > Command Pallet)  
+(단축키: Ctrl+`, 메뉴: View -> Show Console menu)  
+* Install Package (단축키: Ctrl-Shift-P, 메뉴: Tools -> Command Pallet)  
 Emmet  
 SideBarEnhancements  
 ConvertToUTF8  
