@@ -54,3 +54,10 @@ Chrome Web Store  <https://chrome.google.com/webstore/category/apps?hl=ko>
 * View -> Toggle Tree View (Sidebar Toggle)  
 * File -> Settings (windows) / Atom -> Preferences (mac)  
 * Settings Tab의 install 항목 선택 후 emmet 설치 
+<hr />
+* Mozilla Firefox <https://www.mozilla.org/ko/firefox/new/>  
+* Firefox 부가기능 설치  
+  firebug  
+  web developer tool  
+  headingsmap  
+  open wax
