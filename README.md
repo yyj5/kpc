@@ -48,7 +48,7 @@ Chrome Web Store  <https://chrome.google.com/webstore/category/apps?hl=ko>
 * Open WAX
 * headingsmap
 
-개발 환경 축가  
+개발 환경 추가  
 * Atom <https://atom.io/>  다운로드 후 설치  
 * File -> Add Project Folder... (fastcampus 계정에서 다운로드 받은 Project 폴더를 지정할 것)  
 * View -> Toggle Tree View (Sidebar Toggle)  
