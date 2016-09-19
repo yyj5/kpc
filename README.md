@@ -4,7 +4,7 @@
 
 ## 웹의 기초 및 HTML5, CSS3, 웹접근성
 
-#### 개발환경 및 플러그인 설치
+### 개발환경 및 플러그인 설치
 
 * Sublime Text 3 다운로드 후 설치 <http://www.sublimetext.com/3>  
 * Package Control 설치 <https://packagecontrol.io/installation#st3>    
@@ -48,7 +48,7 @@ Chrome Web Store  <https://chrome.google.com/webstore/category/apps?hl=ko>
 * Open WAX
 * headingsmap
 
-개발 환경 추가  
+### 개발 환경 추가  
 * Atom <https://atom.io/>  다운로드 후 설치  
   File -> Add Project Folder... (fastcampus 계정에서 다운로드 받은 Project 폴더를 지정할 것)  
   View -> Toggle Tree View (Sidebar Toggle)  
