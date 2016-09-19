@@ -57,9 +57,9 @@ Chrome Web Store  <https://chrome.google.com/webstore/category/apps?hl=ko>
   File -> Settings (windows) / Atom -> Preferences (mac)  
   Settings Tab의 install 항목 선택 후 플러그인 설치플러그인 설치   
   emmet  
-  linter & linter-htmlhint, linter-csslint, linter-jshint  
-  open-in-browser 
- 
+  open-in-browser  
+  linter & linter-htmlhint, linter-csslint, linter-jshint   
+  
 * Mozilla Firefox <https://www.mozilla.org/ko/firefox/new/>  
 * Firefox 부가기능 설치  
   firebug  
