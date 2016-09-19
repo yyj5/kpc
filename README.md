@@ -47,14 +47,14 @@ Chrome Web Store  <https://chrome.google.com/webstore/category/apps?hl=ko>
 * Web Developer Tool
 * Open WAX
 * headingsmap
-
+ <hr />
 ### 개발 환경 추가  
 * Atom <https://atom.io/>  다운로드 후 설치  
   File -> Add Project Folder... (fastcampus 계정에서 다운로드 받은 Project 폴더를 지정할 것)  
   View -> Toggle Tree View (Sidebar Toggle)  
   File -> Settings (windows) / Atom -> Preferences (mac)  
   Settings Tab의 install 항목 선택 후 emmet 설치 
-  <hr />
+ 
 * Mozilla Firefox <https://www.mozilla.org/ko/firefox/new/>  
 * Firefox 부가기능 설치  
   firebug  
