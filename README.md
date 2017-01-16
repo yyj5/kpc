@@ -6,9 +6,9 @@
   File -> Settings (windows) / Atom -> Preferences (mac)  
   Settings Tab의 install 항목 선택 후 플러그인 설치플러그인 설치   
   emmet  
-  open-in-browsers 
-  color-picker
-  pigments
+  open-in-browsers  
+  color-picker  
+  pigments  
   
 * Mozilla Firefox <https://www.mozilla.org/ko/firefox/new/>  
 * Firefox 부가기능 설치  
