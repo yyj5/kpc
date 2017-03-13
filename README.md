@@ -1,4 +1,4 @@
-# 패스트 캠퍼스 프로트엔드 개발 스쿨 3기
+# HTML5&CSS3 Fundamental
 ## 개발환경 및 플러그인 설치
 * Atom <https://atom.io/>  다운로드 후 설치  
   File -> Add Project Folder... (fastcampus 계정에서 다운로드 받은 Project 폴더를 지정할 것)  
