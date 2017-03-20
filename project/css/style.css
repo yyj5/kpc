@@ -37,10 +37,10 @@ body {
 .main-content{
 	background-color: red;
 	height: 60vh;
-	padding: 30px 15px;
+	padding: 30px;
 	box-sizing: border-box;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .group1{
 	background-color: pink;
