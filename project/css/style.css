@@ -7,6 +7,15 @@ html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li
 	margin: 0;
 	padding: 0;
 }
+/* 목록의 불릿 기호 제거 */
+ul{
+	list-style: none;
+}
+/* 링크 스타일 */
+a:link, a:visited{
+	text-decoration: none;
+	color: inherit;
+}
 /* 숨김 콘텐츠 */
 .a11y-hidden{
 	position: absolute;
@@ -35,15 +44,45 @@ body {
 	margin: 0 auto;
 	box-sizing: border-box;
 }
+/* 헤더 */
 .header{
 	background-color: #fff;
 	height: 110px;
 	padding: 0 30px;
 	border-radius: 0 0 15px 15px;
+	position: relative;
 }
+/* 로고 */
+.logo{
+	position: absolute;
+	top: 45px;
+	left: 60px;
+}
+/* 안내 링크 */
+.info{
+	background-color: yellow;
+	font-size: 0;
+	text-align: right;
+}
+.info li{
+	background-color: pink;
+	margin: 10px 0;
+	display: inline-block;
+	font-size: 1.4rem;
+}
+.info a{
+	background-color: lime;
+}
+/* 메인 메뉴 */
+.main-menu{
+	background-color: orange;
+}
+
+/* 비주얼 */
 .visual{
 	height: 120px;
 }
+/* 메인 콘텐츠 */
 .main-content{
 	background-color: #fff;
 	padding: 30px 15px;
@@ -68,9 +107,11 @@ body {
 .group3{
 	width: 190px;
 }
+/* 슬로건 */
 .slogan{
 	min-height: 100px;
 }
+/* 푸터 */
 .footer-bg	{
 	background: #aaa linear-gradient(to bottom, #aaa 0%, #fff 70%, #fff 100%);
 }
