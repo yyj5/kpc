@@ -60,18 +60,26 @@ body {
 }
 /* 안내 링크 */
 .info{
-	background-color: yellow;
+	/*background-color: yellow;*/
 	font-size: 0;
 	text-align: right;
+	margin-right: -8px;
 }
 .info li{
-	background-color: pink;
+	/*background-color: pink;*/
 	margin: 10px 0;
 	display: inline-block;
 	font-size: 1.4rem;
 }
+
+.info li:nth-child(n+2):before {
+	content: "|";
+}
+
+
 .info a{
-	background-color: lime;
+	/*background-color: lime;*/
+	padding: 5px 8px;
 }
 /* 메인 메뉴 */
 .main-menu{
