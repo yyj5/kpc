@@ -47,7 +47,7 @@ body {
 /* 헤더 */
 .header{
 	background-color: #fff;
-	height: 110px;
+	height: 115px;
 	padding: 0 30px;
 	border-radius: 0 0 15px 15px;
 	position: relative;
@@ -85,9 +85,12 @@ body {
 	padding-left: 225px;
 	height: 45px;
 }
-
+.main-menu a{
+	outline: 0 none;
+}
 .main-menu > li{
 	float: left;
+	position: relative;
 }
 .main-menu > li > a{
 	color: #fff;
@@ -100,10 +103,65 @@ body {
 	text-shadow: 1px 0 0 #000, 0 1px 0 #000,
 	-1px 0 0 #000, 0 -1px 0 #000;
 }
+.main-menu > li > a:hover, 
+.main-menu > li > a:focus{
+	color: #ff0;	
+}
+.main-menu > li > a:hover::after,
+.main-menu > li > a:focus::after{
+	content: "";
+	display: block;
+	border-top: 2px solid #000;
+}
 .main-menu ul{
 	background-color: pink;
 	position: absolute;
+	top: 47px;
+	white-space: nowrap;
+}
+.main-menu ul li, .main-menu ul a{
+	display: inline-block;
+}
+.main-menu ul a{
+	padding: 6px 15px 8px 0;
+}
+.main-menu ul a:hover, 
+.main-menu ul a:focus{
+	color: #f00;
+}
+.main-menu ul a::before{
+	content: "r";
+	font-family: 'webcafeIcon';
+	position: relative;
+	top: 2px;
+}
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before{
+	content: "c";
+}
+.about-html{
 	display: none;
+	left: 0;
+}
+.about-css{
+	display: none;
+	left: 0;
+}
+.web-standard{
+	display: none;
+	left: 0;
+}
+.web-accessibility{
+	display: none;
+	left: -140px;
+}
+.qna{
+	display: none;
+	left: -175px;
+}
+.archive{
+	display: none;
+	right: -20px;
 }
 /* 비주얼 */
 .visual{
