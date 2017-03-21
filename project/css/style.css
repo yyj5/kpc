@@ -89,12 +89,18 @@ body {
 	border-radius: 0 0 5px 5p;
 	padding-left: 225px;
 	height:45px;
+}
 
+.main-menu li, .main-menu a {
+	display: inline-block;
+}
 
+.main-menu > a {
+	outline: 0;
 }
 
 .main-menu > li {
-	float:left;
+	float: left;
 }
 
 .main-menu > li > a {
@@ -107,16 +113,68 @@ body {
 	/* 블록은 공간 겹쳤을때 아래로 밀린다 */
 	padding: 0 20px;
 	border-left: 1px solid #fff;
-	text-shadow: 1px 1px 0 #181818, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0 #000 , 6px 6px 0 #000;
-
-
-
+	text-shadow: 1px 0 0 #181818, 0 -1px 0 #000, -1px 0 0 #000, 0 1px 0 #000;
 }
+
+.main-menu > li > a:hover,
+.main-menu > li > a:focus {
+	color: #ff0;
+}
+
+
+.main-menu > li > a:hover::after,
+.main-menu > li > a:focus::after {
+	content: "";
+	display: block;
+	border-top: 2px solid #000;
+}
+
 
 .main-menu ul {
 	background-color: pink;
 	position: absolute;
-	display:none;
+	white-space: nowrap;
+}
+
+/*header 기준으로 잡힘 왜냐면 position지정해준게 없으니까*/
+.main-menu ul li {
+	display: inline-block;
+}
+.main-menu ul a {
+	padding: 6px 0 8px 15px;
+}
+
+.main-menu ul a::before {
+	content: "r";
+	font-family:'webcafeIcon';
+}
+
+.main-menu ul a:hover::before {
+	content: "c";
+	font-family:"webcafeIcon";
+}
+.main-menu ul a:focus::before {
+	content: "c";
+	font-family:"webcafeIcon";
+}
+
+.about-html {
+	display: block;
+}
+.about-css {
+	display: none;
+}
+.web-standard {
+	display: none;
+}
+.web-accessibility {
+	display: none;
+}
+.qna {
+	display: none;
+}
+.archive {
+	display: block;
 }
 
 /* 비주얼 */
