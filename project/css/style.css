@@ -7,6 +7,18 @@ html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li
 	margin: 0;
 	padding: 0;
 }
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+	position: absolute;
+	overflow: hidden;	
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0
+}
 /* 본문 스타일 */
 html{
 	font-size: 10px;
