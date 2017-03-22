@@ -11,13 +11,18 @@ html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li
 ul{
 	list-style: none;
 }
+/* 폼 관련 요소의 글자 크기 및 글꼴 */
+input, textarea, select, option, button{
+	font-size: inherit;
+	font-family: inherit;
+}
 /* 링크 스타일 */
 a:link, a:visited{
 	text-decoration: none;
 	color: inherit;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
 	position: absolute;
 	overflow: hidden;	
 	clip: rect(0 0 0 0);
@@ -27,6 +32,12 @@ a:link, a:visited{
 	margin: -1px;
 	border: 0;
 	padding: 0
+}
+/* 플로트 이슈를 해결하기 위한 clearfix */
+.main-content::after, .member::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 /* 본문 스타일 */
 html{
@@ -218,11 +229,7 @@ body {
 	min-height: 400px;
 	border-radius: 15px 15px 0 0;
 }
-.main-content::after{
-	content: "";
-	display: block;
-	clear: both;
-}
+
 .group{
 	float: left;
 	margin: 0 15px;
@@ -236,6 +243,84 @@ body {
 .group3{
 	width: 190px;
 }
+/* 로그인 */
+.login{
+	background: radial-gradient(circle at top right, #ffc848, #ff8208);
+	background-color: #ff8208;
+	box-shadow: 5px 5px 5px #999;
+	padding: 10px;
+	border-radius: 5px;
+}
+.login-subject{
+	font-size: 1.6rem;
+	color: #ff0;
+	font-family: 'Noto Sans Bold';
+	margin-left: 10px;
+}
+.login-form{
+		background-color: #fff;
+		border-radius: 5px 5px 0 0;
+		padding: 10px 10px 0 10px;
+		margin-top: 10px;
+}
+.login-form fieldset{
+	border: 0 none;
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+}
+.user-id{
+	margin-bottom: 10px;
+}
+.login-form label{
+	width: 4em;
+	display: inline-block;
+}
+.login-form input{
+	width: 90px;
+	height: 20px;
+	border: 1px solid #aaa;
+	padding: 0;
+}
+.btn-login{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 2px;
+	font-weight: bold;
+	border:1px solid #ff4e00;	
+	border-radius: 3px;
+	background-color: #fb5d1f;
+	background-image: linear-gradient(to bottom, #fe5f18 0%,#fa4306 100%);
+}
+.member{
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 2px 10px;
+}
+.join, .find{
+	padding: 8px 0;
+	letter-spacing: -1px;
+}
+.join::before, .find::before{
+	content: "g";
+	font-family: 'webcafeIcon';
+	position: relative;
+	top: 2px;
+	color: #f00;
+}
+.join{
+	float: left;
+}
+.find{
+	float: right;
+}
+
+
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
