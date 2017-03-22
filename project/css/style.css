@@ -183,6 +183,14 @@ body {
 	height: 120px;
 	position: relative;
 }
+
+.visual::before {
+	content: "가상 요소 박스";
+	background: #ff0;
+}
+
+
+
 .viusal-text{
 	display: inline-block;
 	color: rgba(0,0,0,0);
