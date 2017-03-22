@@ -319,8 +319,23 @@ body {
 .find{
 	float: right;
 }
+/* 유효성 검사 배너 링크 */
+.validation{
+	margin-top: 20px;
+}
+.validation a{
+	background:url(images/validation_icon.png) no-repeat 20px 50%,
+	linear-gradient(to bottom, #eee, #ccc);
+	background-color: pink;
+	display: block;
+	border: 1px solid #aaa;
+	margin-top: 10px;
+	border-radius: 15px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 45px;
 
-
+}
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
