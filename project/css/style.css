@@ -11,6 +11,9 @@ html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li
 ul{
 	list-style: none;
 }
+input, textarea, select, option, button {
+	font-family:inherit;
+}
 /* 링크 스타일 */
 a:link, a:visited{
 	text-decoration: none;
@@ -246,7 +249,6 @@ body {
 /* 로그인 */
 .login {
 	background: radial-gradient(circle at top right, #ffc848, #ff8208);
-	
 	box-shadow: 5px 5px 5px 0 #999;
 	border-radius: 5px;
 	padding: 10px;
@@ -283,8 +285,7 @@ body {
 	margin: 5px;
 }
 
-.login-form lable {
-	background-color: lime;
+.login-form label {
 	display: inline-block; 
 	/*inline은 글자길이에 따라 저절로 width, height결정된다*/
 	/*width, height가지면서 줄바꿈 저절로 되길 원하면 inline-block*/
@@ -295,19 +296,8 @@ body {
 	width: 100px;
 	height: 20px;
 	border: 1px solid #aaa;
-	padding: 0;
 }
 
-.login button {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	width: 50px; 
-	height: 50px;
-	color: #fff;
-	font-size: 11px;
-	line-height: normal;
-}
 
 .join {
 	float: left;
@@ -318,6 +308,29 @@ body {
 legned {
 	display: block;
 }
+
+.btn-login{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 2px;
+	font-weight: bold;
+	border:1px solid #ff4e00;	
+	border-radius: 3px;
+	background-color: #fb5d1f;
+	background-image: linear-gradient(to bottom, #fe5f18 0%,#fa4306 100%);
+}
+
+.member {
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+	float:left;
+}
+
 
 /* 슬로건 */
 .slogan{

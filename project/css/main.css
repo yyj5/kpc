@@ -299,22 +299,27 @@ li.first-item a:before{
 	font-size: 1.6rem;
 	padding: 0 0 10px 10px;
 }
-.login form{
+.login form {
 	background: #fff;
 	padding: 10px 10px 0 10px;
 	border-radius: 3px 3px 0 0;
 }
+
 .login fieldset{
 	position: relative;
 	border-bottom: 1px solid #aaa;
 }
-.user-email, .user-pw{
+
+.user-id, .user-pw {
 	margin-bottom: 7px;
 }
-.login label{
-	width: 55px;
+
+.login label {
 	display: inline-block;
+	width: 50px;
+	background-color: lime;
 }
+
 .login input{
 	box-sizing: border-box;
 	width: 95px;
