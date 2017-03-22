@@ -17,7 +17,7 @@ a:link, a:visited{
 	color: inherit;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
 	position: absolute;
 	overflow: hidden;	
 	clip: rect(0 0 0 0);
@@ -243,6 +243,82 @@ body {
 .group3{
 	width: 190px;
 }
+/* 로그인 */
+.login {
+	background: radial-gradient(circle at top right, #ffc848, #ff8208);
+	
+	box-shadow: 5px 5px 5px 0 #999;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.login-subject {
+	font-size: 1.6rem;
+	color: #ff0;
+	font-family: 'Noto Sans Bold';
+	margin-left: 10px;
+}
+
+/*.login h2 {
+	color: yellow;
+	padding: 5px 0px 0px 15px;
+}*/
+
+.login form {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px 10px 0 10p;
+	margin-top: 10px;
+	position: relative;
+}
+
+.login-form filedset {
+	border: 0 none;
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+}
+
+.user-id, .user-pw {
+	margin: 5px;
+}
+
+.login-form lable {
+	background-color: lime;
+	display: inline-block; 
+	/*inline은 글자길이에 따라 저절로 width, height결정된다*/
+	/*width, height가지면서 줄바꿈 저절로 되길 원하면 inline-block*/
+	width: 60px;
+}
+
+.login-form input {
+	width: 100px;
+	height: 20px;
+	border: 1px solid #aaa;
+	padding: 0;
+}
+
+.login button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 50px; 
+	height: 50px;
+	color: #fff;
+	font-size: 11px;
+	line-height: normal;
+}
+
+.join {
+	float: left;
+	padding: 0 0 0 0;
+	margin: 0 15px 0 15px;
+}
+
+legned {
+	display: block;
+}
+
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
