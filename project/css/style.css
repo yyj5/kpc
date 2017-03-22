@@ -244,6 +244,7 @@ body {
 	width: 190px;
 }
 /* 로그인 */
+/* 로그인 배너 링크 */
 .login{
 	background: radial-gradient(circle at top right, #ffc848, #ff8208);
 	background-color: #ff8208;
@@ -320,6 +321,28 @@ body {
 	float: right;
 }
 
+/* 유효성 검사 배너링크 디자인 */
+/*.validation {
+	margin-top: 20px;
+}
+
+.validation li {
+	background-color: #fff;
+	background-image: linear-gradient(to bottom, #fff 0%,#999 100%);
+	border: 1px solid #999;
+	margin-top: 20px;
+	padding-left: 10px;
+	border-radius: 15px;
+}
+
+.validation a {
+	background: rgba(0, 0, 0, 0) url(images/validation_icon.png) no-repeat 15px 50%, linear-gradient;
+	display: block;
+	height: 30px;
+	line-height:30px;
+	text-indent: 35px;
+	padding: 0 10px;
+}*/
 
 /* 슬로건 */
 .slogan{

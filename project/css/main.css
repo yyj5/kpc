@@ -360,7 +360,7 @@ li.first-item a:before{
 .find{
 	float: right;
 }
-/* 유효성 검사 배너 */
+/* 유효성 검사 배너 링크*/
 .validation{
 	margin-top: 20px;
 }
