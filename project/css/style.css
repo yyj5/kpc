@@ -38,6 +38,11 @@ body {
 	font-family: 'Noto Sans Regular';
 	background: #fff linear-gradient(to bottom, #aaa 0%, #fff 70%, #fff 100%);
 }
+
+.wrapper {
+	background: #ff0 url(images/bg_flower.png) no-repeat 50% 0 /1200px 500px fixed;  
+}
+
 /* 레이아웃 */
 .header, .visual, .main-content, .slogan, .footer{
 	width: 940px;
@@ -164,8 +169,30 @@ body {
 	right: -20px;
 }
 /* 비주얼 */
+@keyframes text-ani {
+	0% {
+		font-size: 12px;
+		color: rgba(0,0,0,0);
+		transform: translate(0,0);
+	}
+	100% {
+		font-size: 24px;
+		color: rgba(0,0,0,1);
+		transform: translate(400px,70px);
+	}
+}
+
 .visual{
 	height: 120px;
+	color: 
+}
+
+.visual-text {
+	background-color:yellow;
+	display:inline-block;
+	animation-name: text-ani;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }
 /* 메인 콘텐츠 */
 .main-content{
