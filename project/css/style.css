@@ -91,7 +91,7 @@ body {
 	text-transform: uppercase;
 }
 /* 메인 메뉴 */
-.main-menu {	
+.main-menu{	
 	background: linear-gradient(to bottom, #eaac2e 0%,#f2752e 35%,#f2752e 65%,#eaac2e 100%);
 	background-color: #f2752e;
 	border-top: 2px solid #000;
@@ -99,14 +99,14 @@ body {
 	padding-left: 225px;
 	height: 45px;
 }
-.main-menu a {
+.main-menu a{
 	outline: 0 none;
 }
-.main-menu > li {
+.main-menu > li{
 	float: left;
 	position: relative;
 }
-.main-menu > li > a {
+.main-menu > li > a{
 	color: #fff;
 	font-size: 1.6rem;
 	font-family: 'Noto Sans Bold';
@@ -444,7 +444,25 @@ body {
 	background: #fff;
 }
 .notice-list, .pds-list{
-	padding-top: 45px;
+	padding-top: 40px;
+}
+.notice-list li, .pds-list li{
+	margin: 8px 0;
+}
+.notice-list li::before, .pds-list li::before{
+	content: "r";
+	font-family: 'webcafeIcon';
+	margin-right: 3px;
+}
+.board-headline{
+	width: 285px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.board-date{
+	float: right;
 }
 .notice-more, .pds-more{
 	position: absolute;
@@ -459,9 +477,12 @@ body {
 	top: 2px;
 	color: #36ff15;
 	margin-right: 3px;
-
 }
-
+/* 새소식 */
+.news{
+	margin-top: 20px;
+	background-color: yellow;
+}
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
