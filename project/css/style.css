@@ -368,6 +368,43 @@ body {
 	line-height: 1.5;
 	margin-top: 10px;
 }
+/* 웹 카페 검색 */
+.search{
+	border: 1px solid #aaa;
+	border-bottom: 0;
+	border-radius: 25px 25px 0 0;
+	background: linear-gradient(to bottom, #ccc, #fff);
+	background-color: #ccc;
+	padding: 20px 25px 5px;
+}
+.search-form fieldset{
+	border: 0;
+}
+.search-form label::before{
+	content: "z";
+	font-family: 'webcafeIcon';
+	position: relative;
+	top: 2px;
+	margin-right: 3px;
+}
+.search-form input{
+	border: 1px solid #aaa;
+	width: 200px;
+	height: 20px;
+	padding: 1px 1px 1px 5px;
+	border-radius: 3px;
+	font-size: 1.3rem;
+	margin: 0 4px 0 3px;
+}
+.btn-search{
+	font-size: 1.3rem;
+	color: #fff;
+	height: 22px;
+	padding: 1px 10px;
+	border:1px solid #aaa;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, #999, #333);
+}
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
