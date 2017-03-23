@@ -403,6 +403,17 @@ body {
 	line-height: 1.5;
 }
 
+.search {
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	border-radius: 10px 10px 0 0;
+	padding: 10px 20px 0;
+}
+
+.searchform {
+	border: 0 none;
+}
+
+
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
