@@ -257,17 +257,18 @@
             <footer class="footer">푸터</footer>
         </div>        
     </div>
-    <!--<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script>
-    $(function(){
-        $(".board h2 a").click(function(e){
-            e.preventDefault();
-            $(this).parent().parent().addClass("board-active").siblings().removeClass("board-active");
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+	<script>
+        $(function(){
+            $(".tab").click(function(e){
+                e.preventDefault();
+                $(this).parent().parent().addClass("board-active")
+                .siblings().removeClass("board-active");
+            });
         });
-    }); 
-  </script>-->
+    </script>
 </body>
 </html>

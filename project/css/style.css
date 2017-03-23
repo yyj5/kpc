@@ -407,7 +407,6 @@ body {
 }
 /* 공지사항 및 자료실 */
 .board{
-	background-color: yellow;
 	margin-top: 20px;
 	position: relative;
 }
@@ -445,8 +444,25 @@ body {
 	background: #fff;
 }
 .notice-list, .pds-list{
-	background-color: pink;
-	padding-top: 45px;
+	padding-top: 40px;
+}
+.notice-list li, .pds-list li{
+	margin: 8px 0;
+}
+.notice-list li::before, .pds-list li::before{
+	content: "r";
+	font-family: 'webcafeIcon';
+	margin-right: 3px;
+}
+.board-headline{
+	width: 285px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.board-date{
+	float: right;
 }
 .notice-more, .pds-more{
 	position: absolute;
@@ -463,7 +479,6 @@ body {
 	margin-right: 3px;
 
 }
-
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
