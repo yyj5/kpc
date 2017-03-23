@@ -405,6 +405,36 @@ body {
 	border-radius: 3px;
 	background: linear-gradient(to bottom, #999, #333);
 }
+
+.board {
+	margin-top: 20px;
+	background-color: yellow;
+}
+
+.notice board-active {
+	background-color: pink;
+}
+
+.board h1 {
+	float: left;
+}
+
+.board-headline::before {
+	color: #666666;
+    content: "r";
+    font-family: webcafeIcon;
+    position: relative;
+    top: 5px;
+}
+
+.notice-more, .pds-more {
+	float: right;
+	overflow: hidden;
+	position: relative;
+	right: 20px;
+	top: -110px;
+}
+
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
