@@ -402,18 +402,47 @@ body {
 	width: 145px;
 	line-height: 1.5;
 }
-
+/* 웹 카페 검색 */
 .search {
-	background-image: linear-gradient(to bottom, #eee, #ccc);
-	border-radius: 10px 10px 0 0;
-	padding: 10px 20px 0;
+	background-image: linear-gradient(to bottom, #ccc, #fff);
+	border-radius: 20px 20px 0 0;
+	padding: 15px 10px 5px 10px;
+	border: 1px solid #aaa;
+	border-bottom: 0;
 }
 
-.searchform {
+.search-form fieldset {
 	border: 0 none;
 }
 
+.search-form label::before {
+    content: "z";
+    font-family: webcafeIcon;
+	position: relative;
+	top: 2px;
+	margin-right: 2px;
+}
 
+#keyword {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+	width:200px;
+	height:20px;
+	padding:1px 1px 1px 5px;
+	font-size: 1.3rem;
+	margin: 0 10px;
+}
+
+
+.btn-search {
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	background-image: linear-gradient(to bottom, #999, #333);
+	height:22px;
+	padding:1px 10px;
+	color: #fff;
+	font-size: 1.3rem;
+}
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
