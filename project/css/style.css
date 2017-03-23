@@ -477,7 +477,11 @@ body {
 	top: 2px;
 	color: #36ff15;
 	margin-right: 3px;
-
+}
+/* 새소식 */
+.news{
+	margin-top: 20px;
+	background-color: yellow;
 }
 /* 슬로건 */
 .slogan{
