@@ -407,7 +407,6 @@ body {
 }
 /* 공지사항 및 자료실 */
 .board{
-	background-color: yellow;
 	margin-top: 20px;
 	position: relative;
 }
@@ -445,7 +444,6 @@ body {
 	background: #fff;
 }
 .notice-list, .pds-list{
-	background-color: pink;
 	padding-top: 45px;
 }
 .notice-more, .pds-more{
