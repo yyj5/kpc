@@ -266,6 +266,8 @@
     $(function(){
         $(".tab").click(function(e){
             e.preventDefault();
+             $(this).parent().parent().addClass("board-active").siblings().removeClass("board-active");
+            // Dom구조
         }) ;
     });
   </script>
