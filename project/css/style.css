@@ -397,7 +397,7 @@ body {
 	margin: 0 4px 0 3px;
 }
 .btn-search{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: #fff;
 	height: 22px;
 	padding: 1px 10px;
@@ -405,49 +405,64 @@ body {
 	border-radius: 3px;
 	background: linear-gradient(to bottom, #999, #333);
 }
-
 /* 공지사항 및 자료실 */
-
-.board {
-	margin-top: 20px;
+.board{
 	background-color: yellow;
+	margin-top: 20px;
 	position: relative;
 }
-
-.notice-list, .pds-list, .notice-more, .pds-more {
+.notice-list,.pds-list, .notice-more, .pds-more{
 	display: none;
 }
-
-.board-active .notice-list, .board-active .notice-more, 
-.board-active .pds-list, .board-active .pds-more {
-	display: block !important;
+.board-active .notice-list, .board-active .pds-list, 
+.board-active .notice-more, .board-active .pds-more{
+	display: block;
 }
-
-.notice-subject, .pds-subject {
-	background-color: brown;
+.notice-subject, .pds-subject{
+	position: absolute;
+	top: 0;
 }
-
-
-.notice-list, .pds-list {
+.notice-subject{
+	left: 0;
+} 
+.pds-subject{
+	left: 74px;
+}
+.board .tab{
+	display: block;
+	font-size: 1.4rem;
+	padding: 7px 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px 10px 0 0;
+	background: linear-gradient(to bottom, #eee, #ccc);
+	background-color: #ccc;
+	color: #666;
+}
+.board-active .tab{
+	color: #fa4306;
+	border-color: #fa4306;
+	border-bottom-color: #fff;
+	background: #fff;
+}
+.notice-list, .pds-list{
 	background-color: pink;
 	padding-top: 45px;
 }
-
-.notice-more, .pds-more {
+.notice-more, .pds-more{
 	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 5px;
+	top: -8px;
+	right: -8px;
+	padding: 8px;
 }
-
-.notice-more::before, .pds-more::before {
+.notice-more::before, .pds-more::before{
 	content: "p";
 	font-family: 'webcafeIcon';
 	position: relative;
-	top:2px;
+	top: 2px;
+	color: #36ff15;
 	margin-right: 3px;
-}
 
+}
 
 /* 슬로건 */
 .slogan{
