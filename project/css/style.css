@@ -91,7 +91,7 @@ body {
 	text-transform: uppercase;
 }
 /* 메인 메뉴 */
-.main-menu{	
+.main-menu {	
 	background: linear-gradient(to bottom, #eaac2e 0%,#f2752e 35%,#f2752e 65%,#eaac2e 100%);
 	background-color: #f2752e;
 	border-top: 2px solid #000;
@@ -99,14 +99,14 @@ body {
 	padding-left: 225px;
 	height: 45px;
 }
-.main-menu a{
+.main-menu a {
 	outline: 0 none;
 }
-.main-menu > li{
+.main-menu > li {
 	float: left;
 	position: relative;
 }
-.main-menu > li > a{
+.main-menu > li > a {
 	color: #fff;
 	font-size: 1.6rem;
 	font-family: 'Noto Sans Bold';
