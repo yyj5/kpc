@@ -34,7 +34,7 @@ a:link, a:visited{
 	padding: 0
 }
 /* 플로트 이슈를 해결하기 위한 clearfix */
-.main-content::after, .member::after{
+.main-content::after, .member::after, .term-list::after{
 	content: "";
 	display: block;
 	clear: both;
@@ -334,7 +334,39 @@ body {
 	height: 30px;
 	line-height: 30px;
 	text-indent: 45px;
-
+}
+/* 웹 관련 용어 */
+.term{
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #eee, #ccc);
+	background-color: #ccc;
+	padding: 15px;
+	margin-top: 20px;
+}
+.term-subject{
+	font-family: 'Noto Sans Bold';
+	font-size: 1.6rem;
+}
+.term a {
+	display: block;
+	margin-top: 15px;
+}
+.term-list-subject, .term-list-brief{
+	float: right;
+	width: 145px;
+}
+.term-list-subject{
+	color: #296897;
+	font-family: 'Noto Sans Bold';
+	margin-top: -2px;
+}
+.term-list-thumbnail{
+	float: left;
+}
+.term-list-brief{
+	line-height: 1.5;
+	margin-top: 10px;
 }
 /* 슬로건 */
 .slogan{
