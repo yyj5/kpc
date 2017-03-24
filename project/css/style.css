@@ -64,6 +64,11 @@ a:visited {
     color: inherit;
 }
 
+a:hover,
+a:focus {
+    color: #f00;
+}
+
 
 /* 숨김 콘텐츠 */
 
@@ -795,6 +800,7 @@ body {
 
 .btn-event-prev,
 .btn-event-next {
+    cursor: pointer;
     border: 0;
     padding: 0;
     width: 20px;
@@ -827,10 +833,13 @@ body {
     border-radius: 3px;
     height: 25px;
     overflow: hidden;
-    transition-property: height, padding;
-    transition-duration: 2s;
-    transition-delay: 0;
-    transition-timing-function: ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.related-list:hover,
+.related-list:focus {
+    height: 125px;
+    padding: 10px 0;
 }
 
 .related-list a {
@@ -839,9 +848,41 @@ body {
     text-indent: 25px;
 }
 
-.related-list:hover {
-    height: 125px;
-    padding: 10px 0;
+/* 인기사이트 */
+
+.hot {
+    background-color: #ffffff;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.hot-subject {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans Bold';
+}
+
+.hot-subject span {
+    color: #fa4306;
+}
+
+.hot-list li::before {
+    background: #a1a1a1 none repeat;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.75em;
+    margin-right: 5px;
+    padding: 2px 5px;
+}
+
+.hot-more::before {
+    content: "p";
+    font-family: 'webcafeIcon';
+    position: relative;
+    color: #36ff15;
+    margin-right: 3px;
 }
 
 /* 슬로건 */
