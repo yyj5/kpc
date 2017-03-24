@@ -853,7 +853,88 @@ body {
 
 .hot {
     margin-top: 20px;
-    background-color: yellow;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    background-color: #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.hot-subject {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans Bold';
+}
+
+.hot-subject span {
+    color: #fa4306;
+}
+
+.hot-list {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.hot-list li {
+    counter-increment: number;
+    position: relative;
+}
+
+.hot-list li::before {
+    content: counter(number, decimal);
+    background-color: #aaa;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.hot-list a {
+    display: inline-block;
+    width: 135px;
+}
+
+.up,
+.down,
+.stop {
+    background-image: url(images/rank.png);
+    background-repeat: no-repeat;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 9px;
+    height: 11px;
+    margin-top: -5px;
+}
+
+.stop {
+    background-position: 0 50%;
+}
+
+.down {
+    background-position: 0 100%;
+}
+
+.ir-hot {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.hot-more {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 8px;
+}
+
+.hot-more::before {
+    content: "p";
+    font-family: 'webcafeIcon';
+    position: relative;
+    top: 2px;
+    color: #36ff15;
+    margin-right: 3px;
 }
 
 
