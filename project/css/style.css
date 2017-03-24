@@ -64,6 +64,11 @@ a:visited {
     color: inherit;
 }
 
+a:hover,
+a:focus {
+    color: #f00;
+}
+
 
 /* 숨김 콘텐츠 */
 
@@ -795,6 +800,7 @@ body {
 
 .btn-event-prev,
 .btn-event-next {
+    cursor: pointer;
     border: 0;
     padding: 0;
     width: 20px;
@@ -827,6 +833,13 @@ body {
     border-radius: 3px;
     height: 25px;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.related-list:hover,
+.related-list:focus {
+    height: 125px;
+    padding: 10px 0;
 }
 
 .related-list a {
