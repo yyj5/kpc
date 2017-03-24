@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Cafe</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -13,17 +15,17 @@
                 <a href="#">
                     <img src="./images/logo.png" alt="Web Cafe">
                 </a>
-            </h1>            
+            </h1>
             <ul class="info">
-                <li><a href="#">홈＆</a></li>
+                <li><a href="#">홈</a></li>
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">사이트맵</a></li>
                 <li><a href="#">english</a></li>
-            </ul>   
+            </ul>
             <nav class="navigation">
                 <h2 class="a11y-hidden">메인 메뉴</h2>
-                <ul class="main-menu">                    
+                <ul class="main-menu">
                     <li>
                         <a href="#">HTML에 대해</a>
                         <ul class="about-html">
@@ -124,14 +126,14 @@
                         </ul>
                     </li>
                 </ul>
-            </nav>  
+            </nav>
         </header>
         <div class="visual">
             <p class="viusal-text">
                 Web Standard &amp; Accessibility
             </p>
         </div>
-        <main class="main-content">            
+        <main class="main-content">
             <div class="group group1">
                 <div class="login">
                     <h2 class="login-subject">로그인</h2>
@@ -170,11 +172,10 @@
                                 <img src="images/web_standards.gif" alt="W3C 로고">
                             </dd>
                             <dd class="term-list-brief">
-                                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 
-                                말하며 표준 규격은..
+                                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은..
                             </dd>
                         </dl>
-                    </a>                    
+                    </a>
                 </div>
             </div>
             <div class="group group2">
@@ -251,24 +252,20 @@
                     <h2 class="news-subject">새소식</h2>
                     <article class="news-item">
                         <h3 class="news-item-headline">W3C 사이트가 리뉴얼 되었습니다.</h3>
-                        <time class="news-item-date" 
-                        datetime="2017-03-23T14:07:30">2017.03.23</time>
+                        <time class="news-item-date" datetime="2017-03-23T14:07:30">2017.03.23</time>
                         <p class="news-item-brief">
-                            디자인 및 다양한 view환경을 고려하여 구성되어 있으며, 
-                            기존보다 최신 정보 및 개발자를 위한 기술 가이드도 
-                            찾기 쉽도록 구성되어 있습니다. 
+                            디자인 및 다양한 view환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.
                         </p>
                         <figure>
-                            <img src="images/news.gif" 
-                                 alt="HTML5를 발표하면서 W3C 사이트가 리뉴얼 된 모습">
+                            <img src="images/news.gif" alt="HTML5를 발표하면서 W3C 사이트가 리뉴얼 된 모습">
                             <figcaption>W3C 리뉴얼</figcaption>
                         </figure>
                     </article>
                     <a href="#" class="news-more" target="_blank" title="새소식">더보기</a>
                 </div>
-            </div>            
+            </div>
             <div class="group group3">
-                <div class="event-related"> 
+                <div class="event-related">
                     <div class="event">
                         <h2 class="event-subject">
                             신규 <span>이벤트</span>
@@ -282,8 +279,8 @@
                             </p>
                         </div>
                         <div class="btn-event">
-                            <button class="btn-event-prev">이전 이벤트 보기</button>
-                            <button class="btn-event-next">다음 이벤트 보기</button>
+                            <button class="btn-event-prev"><span class="ir-text">이전 이벤트 보기</span></button>
+                            <button class="btn-event-next"><span class="ir-text">다음 이벤트 보기</span></button>
                         </div>
                     </div>
                     <div class="related">
@@ -299,27 +296,25 @@
                         </ul>
                     </div>
                 </div>
-            </div>                   
+            </div>
         </main>
         <article class="slogan">
             <h2>슬로건</h2>
         </article>
         <div class="footer-bg">
             <footer class="footer">푸터</footer>
-        </div>        
+        </div>
     </div>
-    <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-	<script>
-        $(function(){
-            $(".tab").click(function(e){
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".tab").click(function(e) {
                 e.preventDefault();
                 $(e.target).parent().parent().addClass("board-active")
-                .siblings().removeClass("board-active");
+                    .siblings().removeClass("board-active");
             });
         });
     </script>
 </body>
+
 </html>

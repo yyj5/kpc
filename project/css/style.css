@@ -827,6 +827,10 @@ body {
     border-radius: 3px;
     height: 25px;
     overflow: hidden;
+    transition-property: height, padding;
+    transition-duration: 2s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
 }
 
 .related-list a {
@@ -835,6 +839,10 @@ body {
     text-indent: 25px;
 }
 
+.related-list:hover {
+    height: 125px;
+    padding: 10px 0;
+}
 
 /* 슬로건 */
 
