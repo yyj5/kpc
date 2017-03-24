@@ -942,9 +942,39 @@ body {
 
 .slogan {
     min-height: 100px;
+    padding-top: 10px;
+    position: relative;
 }
 
+.slogan-subject {
+    background: url("images/coffee.png") no-repeat;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 110px;
+    left: 45px;
+    bottom: -25px;
+}
+.slogan-content {
+    color: #a09874;
+    font-size: 1.3rem;
+    margin: 10px 100px 10px 200px;
+    padding-top: 20px;
+}
+.slogan-content q {
+    font-weight: bold;
+}
 
+.slogan-content q::before {
+    font-size: 3rem;
+    position: relative;
+    top:10px;
+}
+
+.slogan-content q::after {
+    content: "";
+}
 /* 푸터 */
 
 .footer-bg {
