@@ -17,7 +17,7 @@
                 </a>
             </h1>
             <ul class="info">
-                <li><a href="#">홈</a></li>
+                <li><a href="#">홈＆</a></li>
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">사이트맵</a></li>
@@ -287,7 +287,7 @@
                         <h2 class="related-subject">
                             관련 <span>사이트</span>
                         </h2>
-                        <ul class="related-list">
+                        <ul class="related-list" tabindex="0">
                             <li><a href="#">생산성 본부</a></li>
                             <li><a href="#">W3C</a></li>
                             <li><a href="#">웹접근성 연구소</a></li>
@@ -298,21 +298,37 @@
                 </div>
                 <div class="hot">
                     <h2 class="hot-subject">
-                        인기 <span> 사이트 </span>
+                        인기 <span>사이트</span>
                     </h2>
                     <ol class="hot-list">
-                        <li><a href="#" class="hot-site">W3C</a><em class="up">상승</em></li>
-                        <li><a href="#" class="hot-site">CSS Zengarden</a><em class="down">하락</em></li>
-                        <li><a href="#" class="hot-site">web-standard</a><em class="stop">멈춤</em></li>
-                        <li><a href="#" class="hot-site">웹접근성 연구소</a><em class="up">상승</em></li>
+                        <li>
+                            <a href="#" class="hot-site">W3C</a><em class="up"><span class="ir-hot">상승</span></em></li>
+                        <li>
+                            <a href="#" class="hot-site">CSS Zengarden</a><em class="down"><span class="ir-hot">하락</span></em></li>
+                        <li>
+                            <a href="#" class="hot-site">Web Standards</a><em class="stop"><span class="ir-hot">멈춤</span></em></li>
+                        <li>
+                            <a href="#" class="hot-site">웹접근성 연구소</a><em class="up"><span class="ir-hot">상승</span></em></li>
                     </ol>
                     <a href="#" class="hot-more" title="인기 사이트" target="_blank">더보기</a>
                 </div>
             </div>
         </main>
-        <article class="slogan" title="웹카페에서 웹표준을">
-            <span class="ir-text">웹카페 슬로건</span>
-            <h2>슬로건</h2>
+        <article class="slogan">
+            <h2 class="slogan-subject" title="웹카페에서 웹표준을">
+                <span class="ir-text">웹카페 슬로건</span>
+            </h2>
+            <p class="slogan-content">
+                <q cite="http://w3.org/WAI/">
+                    The power of the Web is in its universality, 
+                    Access by everyone regardless of disability 
+                    is an essential aspect.</q>
+                <span>Tim Berners - Lee , W3C Director and 
+                    inventor of the World Wide Web </span>
+            </p>
+            <footer class="a11y-hidden">
+                출처 : http://w3.org/WAI/
+            </footer>
         </article>
         <div class="footer-bg">
             <footer class="footer">푸터</footer>
