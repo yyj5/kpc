@@ -849,6 +849,14 @@ body {
 }
 
 
+/* 인기 사이트 */
+
+.hot {
+    margin-top: 20px;
+    background-color: yellow;
+}
+
+
 /* 슬로건 */
 
 .slogan {
