@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IR기법과 SPrite 이미지</title>
+	<style>
+		.logo{
+			width: 290px;
+			height: 195px;
+			background-image: url(http://www.csszengarden.com/213/title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.ir-text{			
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		.naver-menu{
+			font-size: 12px;			
+			width: 24px;
+			height: 20px;
+			position: relative;
+		}
+		.ir-naver{
+			background-image: url(http://img.naver.net/static/www/img/sp_mn170203.png);
+			background-position: 0 -50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 20px;
+		}
+	</style>
+</head>
+<body>
+  <h1 class="logo">
+		<span class="ir-text">CSS ZenGarden</span>
+	</h1>
+	<div class="naver-menu">
+		<span class="ir-naver"></span>
+		메일
+	</div>
+
+</body>
+</html>
