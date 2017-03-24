@@ -544,6 +544,56 @@ body {
 	color: #36ff15;
 	margin-right: 3px;
 }
+/* 신규 이벤트 및 관련 사이트 */
+.event-related{
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #eee, #ccc);
+	background-color: #ccc;
+	padding: 10px;
+}
+.event-subject, .related-subject{
+	font-size: 1.6rem;
+	font-family: 'Noto Sans Bold';
+}
+.event-subject span, .related-subject span{
+	color: #fa4306;
+}
+#event-detail{
+	margin-top: 10px;
+}
+.event-thumbnail{
+	text-align: center;
+}
+.event-thumbnail img{
+	border: 1px solid #ddd;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
+}
+.event-brief{
+	margin: 10px 0;
+	line-height: 1.5;
+}
+.event-brief em{
+	font-style: normal;
+}
+.related{
+	padding-top: 10px;
+	border-top: 1px solid #aaa;
+	margin-top: 10px;
+}
+.related-list{
+	background: #fff;
+	margin-top: 10px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	height: 25px;
+	overflow: hidden;
+}
+.related-list a{
+	display: block;
+	line-height: 25px;
+	text-indent: 25px;
+}
 /* 슬로건 */
 .slogan{
 	min-height: 100px;
