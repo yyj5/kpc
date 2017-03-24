@@ -984,4 +984,11 @@ body {
 .footer {
     background: #aaa linear-gradient(to bottom, #aaa 0%, #fff 70%, #fff 100%);
     min-height: 100px;
+    position: relative;
+}
+
+.footer-logo {
+    position: absolute;
+    left:45px;
+    top:50px;
 }
